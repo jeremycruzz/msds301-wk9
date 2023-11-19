@@ -68,7 +68,7 @@ Remember to install the Gonum package before running the program and replace the
 
 <summary> "I am going to ask you to write a go program for me all contained within a main.go file. Only respond with the contents of this main.go file and nothing else. I need a program that analyzes all four sets of the AnscombeQuartet dataset using linear regression and prints 'Set I: m= b=' for each of the four sets." </summary>
 
-\```go
+```go
 package main
 
 import (
@@ -108,9 +108,10 @@ func main() {
 		fmt.Printf("Set %s: m=%.2f b=%.2f\n", string('I'+rune(i)), beta, alpha)
 	}
 }
-\```
+```
 
 </details>
+
 
 
 The second prompt was easy to work with as I only had to get rid of the first and last line that chatgpt used to format the code. Once I ran the program to make sure it matched the output of the program that I wrote during week 2 which it did. After that worked I had it create the guesser program, blackjack, poker, poker2, then the crawler with the following prompts:
@@ -129,5 +130,5 @@ The guesser and poker2 program worked immediately without me needing to make any
 
 While the programs worked, there were a few problems with poker and poker 2. The first iteration did not payout any money even if the user won. The second iteration payed out money on every hand including a high card hand. With additional details in the prompt I'm sure that the AI could generate code to properly pay the user out but a developer could go in and easily make that change. 
 
-As of right now I don't think LLMs like chatgpt could replace developers. However, I think chatgpt could be used as a tool that our developers can use to further enhance their productivity. LLM's could work as an alternative to google and figure out whats wrong with their exact code. While non developers are able to generate code, a developer could generate better code with their understanding of code. 
+As of right now I don't think LLMs like chatgpt could replace developers. However, I think chatgpt could be used as a tool that our developers can use to further enhance their productivity. LLM's could work as an alternative to google and figure out whats wrong with their exact code. While non developers are able to generate code, a developer could generate better code with their understanding of code. When it comes to much larger projects only a developer would be able to give the LLM the context needed for the LLM to generate code to add onto the project.
 
